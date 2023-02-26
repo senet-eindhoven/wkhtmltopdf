@@ -178,7 +178,8 @@ void PdfCommandLineParser::parseArguments(int argc, const char ** argv, bool fro
 			ps.header.line = ps.footer.line = false;
 			ps.header.htmlUrl = ps.footer.htmlUrl = "";
 			ps.includeInOutline = false;
-
+			ps.isCover = true;
+			
 			continue;
 		} else if (!strcmp(argv[arg],"toc")) {
 			++arg;
